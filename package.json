@@ -1,0 +1,16 @@
+{
+  "name": "schemepilot-ai",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev:api": "npm run dev -w @schemepilot/api",
+    "dev:web": "npm run dev -w @schemepilot/web",
+    "db:migrate": "npm run db:migrate -w @schemepilot/api",
+    "db:seed": "npm run db:seed -w @schemepilot/api",
+    "test": "npm run test -w @schemepilot/api && npm run test -w @schemepilot/web",
+    "typecheck": "npm run typecheck -w @schemepilot/api && npm run typecheck -w @schemepilot/web",
+    "build": "npm run build -w @schemepilot/api && npm run build -w @schemepilot/web"
+  },
+  "engines": { "node": ">=20.18" }
+}

@@ -1,0 +1,14 @@
+node_modules/
+.next/
+dist/
+coverage/
+.env
+.env.local
+.turbo/
+*.log
+model-cache/
+.npm-cache/
+*.tsbuildinfo
+apps/web/next-env.d.ts
+
+desktop.ini
